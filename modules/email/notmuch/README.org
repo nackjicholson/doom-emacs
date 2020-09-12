@@ -38,13 +38,19 @@ This module makes Emacs an email client, using ~notmuch~.
 * Prerequisites
 This module requires:
 
-+ Either ~gmailieer~ (default), ~mbsync~ or ~offlineimap~ (to sync mail with)
-+ ~notmuch~, to index and tag your downloaded messages.
++ Either ~[[https://github.com/gauteh/lieer][gmailieer]]~ (default), ~mbsync~ or ~offlineimap~ (to sync mail with)
++ ~[[https://notmuchmail.org/][notmuch]]~, to index and tag your downloaded messages.
 + ~afew~, optionally to initially tag your downloaded messages.
-
 ** TODO MacOS
 
 ** TODO Arch Linux
+
+See: [[https://wiki.archlinux.org/index.php/Notmuch][Arch Wiki - Notmuch]]
+
+#+BEGIN_SRC sh
+pacman -S notmuch
+#+END_SRC
+
 ** NixOS
 #+BEGIN_SRC nix
 environment.systemPackages = with pkgs; [
@@ -60,6 +66,7 @@ environment.systemPackages = with pkgs; [
 
 ** TODO openSUSE
 ** TODO Debian/Ubuntu
+
 * TODO Features
 
 * Configuration
